@@ -85,8 +85,53 @@ a:hover{
     object-fit: cover;
     display: block;
   }
-  
 
+  .project-pic-machines {
+    max-width: 100%;
+    height:auto;
+   
+  }
+  
+  .machine-table {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-collapse: collapse;
+  }
+  
+  .machine-table h2 {
+    text-align: center;
+    color: #003b71;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .machine-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+  }
+  
+  .machine-table th {
+    background-color: #e5e5e5;
+    color: #003b71;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .machine-table td {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .machine-table tr:nth-child(even) td {
+    background-color: #ffffff;
+  }
+
+
+
+  
   
   
 
