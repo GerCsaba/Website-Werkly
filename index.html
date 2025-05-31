@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gergely Csaba Portfolio</title>
+    <title>Werkly</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -17,7 +17,7 @@
        
             <ul class="nav-links">
                 <li><a href="#about">About us</a></li>
-                <li><a href="#experience">Maschines</a></li>
+                <li><a href="#machines">Maschines</a></li>
                 <li><a href="#references">References</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#experience" onclick="toggleMenu()">Maschines</a></li>
+                        <li><a href="#machines" onclick="toggleMenu()">Maschines</a></li>
                         <li><a href="#references" onclick="toggleMenu()">References</a></li>
                         <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
                 </div>
@@ -66,21 +66,43 @@
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='#experience'"
+          onclick="location.href='#machines'"
       />
   </section>
 </section>
 
-<section id="experience">
+<section id="machines">
     <p class="section__text__p1">Explore our Machines</p>
     <h1 class="title">Machines</h1>
    
       <div class="about-containers">
+        <div class="machine-table-phone">
+          <h2>VCE 750</h2>
+          <table>
+            <tr><th colspan="2">Spindle</th></tr>
+            <tr><td>Maximum spindle speeds</td><td>10 000 rpm</td></tr>
+            <tr><td>Vertical spindle</td><td>ISO 40</td></tr>
         
+            <tr><th colspan="2">Travel</th></tr>
+            <tr><td>X axis</td><td>750 mm</td></tr>
+            <tr><td>Y axis</td><td>410 mm</td></tr>
+            <tr><td>Z axis</td><td>500 mm</td></tr>
+        
+            <tr><th colspan="2">Table</th></tr>
+            <tr><td>Table size</td><td>900 x 350 mm</td></tr>
+        
+            <tr><th colspan="2">Tool system</th></tr>
+            <tr><td>Tool magazine</td><td>20 pieces</td></tr>
+            <tr><td>Slide structure</td><td>Linear slide</td></tr>
+        
+            <tr><th colspan="2">Weight</th></tr>
+            <tr><td>Machine weight</td><td>4200 Kg</td></tr>
+          </table>
+        </div>
           
-        <div class="ref-wrapper">
-          <img class="project-pic-machines" src="assets/vce750.png" alt="Description of the image">
-          <div class="machine-table">
+        <div class="ref-wrapper1">
+          <img class="project-pic-machines1" src="assets/vce750.png" alt="Description of the image">
+          <div class="machine-table1">
             <h2>VCE 750</h2>
             <table>
               <tr><th colspan="2">Spindle</th></tr>
@@ -103,10 +125,36 @@
               <tr><td>Machine weight</td><td>4200 Kg</td></tr>
             </table>
           </div>
+
+          
         </div>
+
         
-        <div class="ref-wrapper">
-          <div class="machine-table">
+        <div class="machine-table-phone">
+          <h2>VCE 1000</h2>
+          <table>
+            <tr><th colspan="2">Spindle</th></tr>
+            <tr><td>Maximum spindle speeds</td><td>16 000 rpm</td></tr>
+            <tr><td>Vertical spindle</td><td>HSK-A63</td></tr>
+        
+            <tr><th colspan="2">Travel</th></tr>
+            <tr><td>X axis</td><td>1020 mm</td></tr>
+            <tr><td>Y axis</td><td>560 mm</td></tr>
+            <tr><td>Z axis</td><td>600 mm</td></tr>
+        
+            <tr><th colspan="2">Table</th></tr>
+            <tr><td>Table size</td><td>1000 × 560 mm</td></tr>
+        
+            <tr><th colspan="2">Tool system</th></tr>
+            <tr><td>Tool magazine</td><td>40 pieces</td></tr>
+            <tr><td>Slide structure</td><td>Linear slide</td></tr>
+        
+            <tr><th colspan="2">Weight</th></tr>
+            <tr><td>Machine weight</td><td>6500 Kg</td></tr>
+          </table>
+        </div>
+        <div class="ref-wrapper2">
+          <div class="machine-table2">
             <h2>VCE 1000</h2>
             <table>
               <tr><th colspan="2">Spindle</th></tr>
@@ -130,10 +178,11 @@
             </table>
           </div>
           
-          <img class="project-pic-machines" src="assets/vce1000.png" alt="Description of the image">
+          <img class="project-pic-machines2" src="assets/vce1000.png" alt="Description of the image">
          
         </div>
 
+        
        
    
     
