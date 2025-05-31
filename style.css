@@ -38,7 +38,7 @@ nav{
 
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 12vh;
 } 
 
 
@@ -63,13 +63,17 @@ a:hover{
     text-decoration-color:rgb(181,181,181)
 }
 
-.logo{
-    font-size: 2rem;
-}
+.logo {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  
+  
 
-.logo:hover{
-    cursor:default
-}
 
 
 
