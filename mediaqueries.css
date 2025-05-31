@@ -1,3 +1,60 @@
+@media screen and (min-width: 1100px) {
+  .machine-table-phone{
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  
+  /* TÁBLÁZATOK */
+
+  .machine-table1,  .machine-table2{
+    display: none;
+    
+  }
+  .project-pic-machines1{
+    margin-bottom:100px ;
+   
+  }
+  .machine-table-phone{
+    margin-left: 35px;
+    margin-right: 35px;
+    max-width: 400px;
+    width: 400px;
+  }
+  .ref-wrapper1{
+    margin-bottom: 0px;
+  }
+ 
+ 
+  .machine-table-phone td{
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .machine-table-phone th{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .machine-table-phone h2 {
+    font-size: 18px;
+  }
+  
+  .project-pic-machines1{
+    width: 100%;          
+    max-width: 650px;
+    margin-right: 0px;
+    
+
+
+  }
+  .project-pic-machines2{
+    width: 100%;          
+    max-width: 650px;
+    margin-top: 0px;
+    margin-left: 0px; 
+
+  }
+}
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -10,6 +67,7 @@
   #references {
     height: fit-content;
   }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,16 +103,10 @@
   .about-containers {
     margin-top: 0;
   }
-  .logo {
-    display: block;
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
+ 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .logo {
     display: block;
     max-width: 150px;
@@ -62,6 +114,7 @@
     height: auto;
     margin-left: 0;
   }
+ 
 }
 
 @media screen and (max-width: 600px) {
