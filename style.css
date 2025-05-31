@@ -90,33 +90,69 @@ a:hover{
     display: block;
   }
 
-  .project-pic-machines {
-    max-width: 100%;
-    height:auto;
+  .ref-wrapper1,.ref-wrapper2  {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 100px;
+  }
+
+  .ref-wrapper1  {
+   margin-bottom: 100px;
+   /* margin-left: 50px; */
+
+  }
+
+  .ref-wrapper2 {
+     margin-bottom: 1px;
+    
+  }
+ 
+  .project-pic-machines1, .project-pic-machines2 {
+      
+    height: auto;         /* megtartja az arányokat */
+    display: block;       /* szükséges a margin auto-hoz */
+  }
+  
+  .project-pic-machines1{
+    width: 100%;          
+    max-width: 650px;
+    margin-right: 100px;
    
   }
-  
-  .machine-table {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 50px auto;
-    border-collapse: collapse;
+  .project-pic-machines2{
+    width: 100%;          
+    max-width: 650px;
+    margin-top: 70px;
+    margin-left: 100px; 
+
   }
   
-  .machine-table h2 {
+  .machine-table1,  .machine-table2  {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    width: 500px;
+    margin: 0 auto; /* Ez teszi középre */
+    border-collapse: collapse;
+    
+
+  }
+
+ 
+  
+  .machine-table1 h2 , .machine-table2 h2{
     text-align: center;
     color: #003b71;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .machine-table table {
+  .machine-table1 table, .machine-table2 table {
     width: 100%;
     border-collapse: collapse;
     background-color: #f6f6f6;
   }
   
-  .machine-table th {
+  .machine-table1 th, .machine-table2 th {
     background-color: #e5e5e5;
     color: #003b71;
     text-align: left;
@@ -124,15 +160,61 @@ a:hover{
     font-weight: bold;
   }
   
-  .machine-table td {
+  .machine-table1 td, .machine-table2 td{
     padding: 10px;
     border-top: 1px solid #ccc;
   }
   
-  .machine-table tr:nth-child(even) td {
+  .machine-table1 tr:nth-child(even) td,   .machine-table2 tr:nth-child(even) td {
     background-color: #ffffff;
   }
 
+
+
+
+  /* Machine table for phone */
+
+
+  .machine-table-phone  {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    width: 500px;
+    margin: 0 auto; /* Ez teszi középre */
+    border-collapse: collapse;
+
+  }
+
+ 
+  
+  .machine-table-phone h2 {
+    text-align: center;
+    color: #003b71;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .machine-table-phone table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+  }
+  
+  .machine-table-phone th {
+    background-color: #e5e5e5;
+    color: #003b71;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .machine-table-phone td{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .machine-table-phone tr:nth-child(even) td {
+    background-color: #ffffff;
+  }
 
 
   
@@ -237,7 +319,7 @@ a:hover{
 section{
     padding-top: 4vh;
     /* height: 96vh; */
-    margin: 0 10rem 0 10rem;
+    margin: 0 1rem 0 1rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -400,6 +482,9 @@ section{
     display: inline-block; /* így a konténer pontosan a kép mérete lesz */
     /* ne legyen flex, padding, vagy bármi, ami megváltoztatja a méretet */
 }
+
+
+
 .ref-container img {
     width: auto;
     height: auto;
