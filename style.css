@@ -90,52 +90,31 @@ a:hover{
     display: block;
   }
 
-  .ref-wrapper1,.ref-wrapper2  {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 100px;
-  }
 
-  .ref-wrapper1  {
-   margin-bottom: 100px;
-   /* margin-left: 50px; */
-
-  }
-
-  .ref-wrapper2 {
-     margin-bottom: 1px;
-    
-  }
  
   .project-pic-machines1, .project-pic-machines2 {
-      
+    
+    margin-top: 100px;
     height: auto;         /* megtartja az arányokat */
     display: block;       /* szükséges a margin auto-hoz */
+    
   }
-  
-  .project-pic-machines1{
-    width: 100%;          
-    max-width: 650px;
-    margin-right: 100px;
-   
-  }
-  .project-pic-machines2{
-    width: 100%;          
-    max-width: 650px;
-    margin-top: 70px;
-    margin-left: 100px; 
+  .ref-wrapper1, .ref-wrapper2 {
+     padding: 50px;
 
   }
+ 
   
   .machine-table1,  .machine-table2  {
     font-family: Arial, sans-serif;
     max-width: 600px;
-    width: 500px;
-    margin: 0 auto; /* Ez teszi középre */
+    width: 550px;
+    /* margin: 0 auto; Ez teszi középre */
     border-collapse: collapse;
-    
+   
 
   }
+
 
  
   
@@ -317,7 +296,7 @@ a:hover{
 /* Sections */
 
 section{
-    padding-top: 4vh;
+    padding-top: 12vh;
     /* height: 96vh; */
     margin: 0 1rem 0 1rem;
     box-sizing: border-box;
@@ -460,14 +439,71 @@ section{
 
 
 .arrow {
-    position:absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    /* position:absolute; */
+    right: 5rem;
+    bottom: 2.5rem; 
 }
 
+/* Contact */
 
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+
+
+}
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
    
+
+}
+
+.contact-info-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
     
+} 
+
+.contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+
+  /* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+    
+
 .ref-container {
      /* /* padding: 1.5rem;
      flex: 2;
@@ -492,5 +528,21 @@ section{
     /* display: block; */
     /* margin: 0 auto; */
 }
+
+/* .project-pic-ref {
+    width: 100%;
+    max-width: 350px;
+   
+    height: auto;
+    display: block;
+    
+    
+} */
+.project-pic-ref {
+    
+    margin-top: 10px;
+    height: auto;         /* megtartja az arányokat */
+    display: block;       /* szükséges a margin auto-hoz */}
+
 
 
