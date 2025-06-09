@@ -1,41 +1,42 @@
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
   .machine-table-phone{
     display: none;
   }
-}
+} */
 @media screen and (max-width: 1100px) {
   
   /* TÁBLÁZATOK */
 
-  .machine-table1,  .machine-table2{
+  /* .machine-table1,  .machine-table2{
     display: none;
     
-  }
-  .project-pic-machines1{
+  } */
+  /* .project-pic-machines1{
     margin-bottom:100px ;
    
-  }
-  .machine-table-phone{
+  } */
+  .machine-table1, .machine-table2 {
     margin-left: 35px;
     margin-right: 35px;
-    max-width: 400px;
+    max-width: 350px;
     width: 400px;
   }
-  .ref-wrapper1{
+
+  /* .ref-wrapper1{
     margin-bottom: 0px;
-  }
+  } */
  
  
-  .machine-table-phone td{
+  .machine-table1 td, .machine-table2 td{
     padding: 5px;
     font-size: 10px;
   }
   
-  .machine-table-phone th{
+  .machine-table1 th, .machine-table2 th{
     font-size: 12px;
     padding: 5px;
   }
-  .machine-table-phone h2 {
+  .machine-table1 h2, .machine-table2 h2 {
     font-size: 18px;
   }
   
@@ -43,9 +44,7 @@
     width: 100%;          
     max-width: 650px;
     margin-right: 0px;
-    
-
-
+    margin-top: 0px;
   }
   .project-pic-machines2{
     width: 100%;          
@@ -54,6 +53,11 @@
     margin-left: 0px; 
 
   }
+  .project-pic-ref{
+    width: 100%;          
+    max-width: 300px;
+  }
+  
 }
 @media screen and (max-width: 1400px) {
   #profile {
