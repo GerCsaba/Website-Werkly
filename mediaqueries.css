@@ -133,6 +133,16 @@
   article {
     font-size: 1rem;
   }
+
+  .text-container {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 1 rem;
+    font-size:12px;
+  }
+
+
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
@@ -183,6 +193,7 @@
 .aboutme{
   margin: 1rem 0rem;
 }
+
 
 }
 
