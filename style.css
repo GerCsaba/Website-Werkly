@@ -1,266 +1,571 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkly</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-  
-    <nav id="desktop-nav">
-       <img class="logo" src="assets/logo3.png" alt="Description of the image">
-        <!-- <div class="logo">Werkly</div> -->
-        <div>
-       
-            <ul class="nav-links">
-                <li><a href="#about">About us</a></li>
-                <li><a href="#machines">Maschines</a></li>
-                <li><a href="#references">References</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <img class="logo" src="assets/logo3.png" alt="Description of the image">
-        <!-- <div class="logo">Werkly</div> -->
+/* General */ 
 
-        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
 
-        <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#machines" onclick="toggleMenu()">Maschines</a></li>
-                        <li><a href="#references" onclick="toggleMenu()">References</a></li>
-                        <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-                </div>
-        </div>
-    </nav>
-  
 
+*{
+    margin: 0px;;
+    padding: 0;
+}
+
+/* body{
+    font-family: "Poppins", sans-serif;
+} */
+body {
+    font-family: "Poppins", sans-serif;
+    padding-top: 10vh;
+}
+
+html{
+    scroll-behavior: smooth;
     
-  
-    <div class="cncvideo">
-      <video id="project-vid" autoplay muted loop playsinline>
-        <source src="assets/cncvid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+}
+
+p{
+    color:rgb(85,85,85);
+}
+
+nav,
+.nav-links
+{
+    display: flex;
     
+}
 
-
-
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Us</h1>
-     
-      <div class="text-container">
-        <p>
-            
-          Our company was founded with a clear focus: delivering high-precision CNC machining tailored to modern industry needs. With a strong technical background and a deep understanding of metalworking processes, we specialize in producing high-quality parts with tight tolerances and consistent results.
-          <p>
-          <!-- We operate reliable and well-maintained CNC machines that allow us to deliver consistent quality and precision. Our setup is optimized for efficiency, and we focus on getting the most out of our equipment through experience, skill, and attention to detail.
-          </p> -->
-          <p>
-          Our goal is to build long-term partnerships based on trust, transparency, and quality. We are currently open to new collaborations across Europe and are especially interested in expanding our network within Germany.
-          </p>
-          <p>
-
-          If you're looking for a responsive and technically skilled CNC partner, we're ready to support your projects with precision and dedication.
-      
-        </p>
-    </div>
-    
-      <!-- <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#machines'"
-      /> -->
-      
-  </section>
-</section>
-
-<section id="machines">
-    <p class="section__text__p1">Explore our Machines</p>
-    <h1 class="title">Machines</h1>
+nav{
    
-    <div class="about-containers">
-      <div class="ref-wrapper1">
-        <div class="machine-table1">
-          <h2>VCE 750</h2>
-          <table>
-            <tr><th colspan="2">Spindle</th></tr>
-            <tr><td>Maximum spindle speeds</td><td>10 000 rpm</td></tr>
-            <tr><td>Vertical spindle</td><td>ISO 40</td></tr>
-        
-            <tr><th colspan="2">Travel</th></tr>
-            <tr><td>X axis</td><td>750 mm</td></tr>
-            <tr><td>Y axis</td><td>410 mm</td></tr>
-            <tr><td>Z axis</td><td>500 mm</td></tr>
-        
-            <tr><th colspan="2">Table</th></tr>
-            <tr><td>Table size</td><td>900 x 350 mm</td></tr>
-        
-            <tr><th colspan="2">Tool system</th></tr>
-            <tr><td>Tool magazine</td><td>20 pieces</td></tr>
-            <tr><td>Slide structure</td><td>Linear slide</td></tr>
-        
-            <tr><th colspan="2">Weight</th></tr>
-            <tr><td>Machine weight</td><td>4200 Kg</td></tr>
-          </table>
-          <img class="project-pic-machines1" src="assets/vce750.png" alt="Description of the image">
-        </div>
-        
-         
-          
-      </div>
 
-      <div class="ref-wrapper2">
-        <div class="machine-table2">
-          <h2>VCE 1000</h2>
-          <table>
-            <tr><th colspan="2">Spindle</th></tr>
-            <tr><td>Maximum spindle speeds</td><td>16 000 rpm</td></tr>
-            <tr><td>Vertical spindle</td><td>HSK-A63</td></tr>
-        
-            <tr><th colspan="2">Travel</th></tr>
-            <tr><td>X axis</td><td>1020 mm</td></tr>
-            <tr><td>Y axis</td><td>560 mm</td></tr>
-            <tr><td>Z axis</td><td>600 mm</td></tr>
-        
-            <tr><th colspan="2">Table</th></tr>
-            <tr><td>Table size</td><td>1000 × 560 mm</td></tr>
-        
-            <tr><th colspan="2">Tool system</th></tr>
-            <tr><td>Tool magazine</td><td>40 pieces</td></tr>
-            <tr><td>Slide structure</td><td>Linear slide</td></tr>
-        
-            <tr><th colspan="2">Weight</th></tr>
-            <tr><td>Machine weight</td><td>6500 Kg</td></tr>
-          </table>
-          <img class="project-pic-machines2" src="assets/vce1000.png" alt="Description of the image">
-        </div>
-        
-          
-         
-      </div>
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+} 
 
-        
 
-    </div>
-        <!-- <img
-            src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='#references'"
-        /> -->
+.nav-links
+{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a{
+    color: black;
+    text-decoration:none;
+    text-decoration-color:white;
+}
+
+a:hover{
+    color:grey;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:rgb(181,181,181)
+}
+
+.logo {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  
+  
+
+
+
+
+.cncvideo {
+    width: 100vw; /* teljes képernyőszélesség */
+    max-height: 80vh; /* ne legyen túl magas */
+    overflow: hidden;
+  }
+  
+  .cncvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+
+  /* .text-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+    font-size:20px;
+
+  } */
+.text-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1.2rem;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  /* text-align: center; */
+  font-size:20px;
+}
+ 
+  .project-pic-machines1, .project-pic-machines2 {
     
-  </section>
-  <section id="references">
-     
-      <p class="section__text__p1">Explore our</p>
-      <h1 class="title">References</h1>
-      
-        <div class="about-containers">
-          
+    margin-top: 100px;
+    height: auto;         /* megtartja az arányokat */
+    display: block;       /* szükséges a margin auto-hoz */
+    
+  }
+  .ref-wrapper1, .ref-wrapper2 {
+     padding: 50px;
 
-           <!-- References -->
-         
-            <img class="project-pic-ref" src="assets/ref1.png" alt="Description of the image">
-          
-           
-            <img class="project-pic-ref" src="assets/ref2.png" alt="Description of the image">
-          
-          
-            <img class="project-pic-ref" src="assets/ref3.png" alt="Description of the image">
-          
-          
-            <img class="project-pic-ref" src="assets/ref4.png" alt="Description of the image">
-          
-         
-            <img class="project-pic-ref" src="assets/ref5.png" alt="Description of the image">
-         
-          
-            <img class="project-pic-ref" src="assets/ref6.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref7.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref8.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref9.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref10.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref11.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref12.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref13.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref14.png" alt="Description of the image">
-         
-            <img class="project-pic-ref" src="assets/ref15.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref16.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref17.png" alt="Description of the image">
-          
-            <img class="project-pic-ref" src="assets/ref18.png" alt="Description of the image">
-          
-          
-       
-        </div>
-        <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      /> -->
-    </section>
+  }
+ 
+  
+  .machine-table1,  .machine-table2  {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    width: 550px;
+    /* margin: 0 auto; Ez teszi középre */
+    border-collapse: collapse;
+   
 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Us</h1>
-      <div class="contact-info-upper-container">
+  }
 
-        <div class="contact-info-container">
-          <img
-            src="./assets/phone.png"
-            alt="Phone icon"
-            class="icon contact-icon phone-icon"
-          />
-          <p><a>+40755...</a></p>
-        </div>
 
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">gergelycsaba37@yahoo.com</a></p>
-        </div>
+ 
+  
+  .machine-table1 h2 , .machine-table2 h2{
+    text-align: center;
+    color: #003b71;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .machine-table1 table, .machine-table2 table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+  }
+  
+  .machine-table1 th, .machine-table2 th {
+    background-color: #e5e5e5;
+    color: #003b71;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .machine-table1 td, .machine-table2 td{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .machine-table1 tr:nth-child(even) td,   .machine-table2 tr:nth-child(even) td {
+    background-color: #ffffff;
+  }
 
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/gergely-csaba-810106177/">LinkedIn</a></p>
-        </div>
 
-      </div>
-    </section>
-    <script src="script.js"></script>
-</body>
-</html>
+
+
+  /* Machine table for phone */
+
+
+  .machine-table-phone  {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    width: 500px;
+    margin: 0 auto; /* Ez teszi középre */
+    border-collapse: collapse;
+
+  }
+
+ 
+  
+  .machine-table-phone h2 {
+    text-align: center;
+    color: #003b71;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .machine-table-phone table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+  }
+  
+  .machine-table-phone th {
+    background-color: #e5e5e5;
+    color: #003b71;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .machine-table-phone td{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .machine-table-phone tr:nth-child(even) td {
+    background-color: #ffffff;
+  }
+
+
+  
+  
+  
+
+
+  
+
+/* Hamburger Menu */
+
+/* #hamburger-nav{
+    display: none;
+} */
+#hamburger-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    display: none;
+}
+#desktop-nav {
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* display: none; */
+}
+
+.hamburger-menu{
+    position:relative;
+    display:inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:24px;
+    width:30px;
+    cursor:pointer;
+}
+
+.hamburger-icon span{
+    height: 2px;
+    background-color: black;
+   
+
+
+}
+
+.menu-links{
+    position:absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration:none ;
+    
+
+
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity:0
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+
+/* Sections */
+
+section{
+    padding-top: 12vh;
+    /* height: 96vh; */
+    margin: 0 1rem 0 1rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display:flex;
+}
+
+/* Profile Secion */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+    height: 80vh;
+
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text{
+    align-self:center;
+    text-align:center;
+}
+
+.section__text p{
+    font-weight: 600;
+}
+
+.section__text__p1{
+    text-align: center;
+}
+
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size:3rem;
+    text-align: center;
+}
+
+  
+  
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    margin:1rem;
+}
+.btn{
+    font-weight: 600;
+    transition:all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2{
+    border:rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover{
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0,0,0);
+}
+
+.btn-color-2{
+    background: none;
+}
+
+.btn-color-2:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container{
+    gap:1rem;
+}
+
+/* About Section */
+
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap:2rem;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.aboutme{
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction:column;
+}
+
+
+
+
+.arrow {
+    /* position:absolute; */
+    right: 5rem;
+    bottom: 2.5rem; 
+}
+
+/* Contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+
+
+}
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+   
+
+}
+
+.contact-info-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+    
+} 
+
+.contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+
+  /* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+.ref-container {
+     /* /* padding: 1.5rem;
+     flex: 2;
+     background: white;
+     border-radius: 2rem; */
+   
+    text-align:center; 
+
+
+    background: white;
+    text-align: center;
+    display: inline-block; /* így a konténer pontosan a kép mérete lesz */
+    /* ne legyen flex, padding, vagy bármi, ami megváltoztatja a méretet */
+}
+
+
+
+.ref-container img {
+    width: auto;
+    height: auto;
+    /* max-width: 100%;  */
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+
+/* .project-pic-ref {
+    width: 100%;
+    max-width: 350px;
+   
+    height: auto;
+    display: block;
+    
+    
+} */
+.project-pic-ref {
+    
+    margin-top: 10px;
+    height: auto;         /* megtartja az arányokat */
+    display: block;       /* szükséges a margin auto-hoz */}
+
+
 
