@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  
+    <nav id="desktop-nav">
+       <img class="logo" src="assets/logo3.png" alt="Description of the image">
+        <!-- <div class="logo">Werkly</div> -->
+        <div>
+       
+            <ul class="nav-links">
+                <li><a href="#about">About us</a></li>
+                <li><a href="#machines">Maschines</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <li class="lang-switch">
+                  <a href="index_germ.html"><img src="assets/Eng_flag2.png" alt="English" class="flag-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <img class="logo" src="assets/logo3.png" alt="Description of the image">
+        <!-- <div class="logo">Werkly</div> -->
+
+        
+
+   
+        <div class="hamburger-menu-container">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="index_germ.html">
+            <img class="flag-icon" src="assets/Eng_flag2.png" alt="Language flag" />
+          </a>
+        </div>
+        
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+          <li><a href="#machines" onclick="toggleMenu()">Maschines</a></li>
+          <li><a href="#references" onclick="toggleMenu()">References</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+        
+    </nav>
+  
+
+    
+  
+    <div class="cncvideo">
+      <video id="project-vid" autoplay muted loop playsinline>
+        <source src="assets/cncvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+
+
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Us</h1>
+     
+      <div class="text-container">
+        <p>
+            
+          Our company was founded with a clear focus: delivering high-precision CNC machining tailored to modern industry needs. With a strong technical background and a deep understanding of metalworking processes, we specialize in producing high-quality parts with tight tolerances and consistent results.
+          <p>
+          <!-- We operate reliable and well-maintained CNC machines that allow us to deliver consistent quality and precision. Our setup is optimized for efficiency, and we focus on getting the most out of our equipment through experience, skill, and attention to detail.
+          </p> -->
+          <p>
+          Our goal is to build long-term partnerships based on trust, transparency, and quality. We are currently open to new collaborations across Europe and are especially interested in expanding our network within Germany.
+          </p>
+          <p>
+
+          If you're looking for a responsive and technically skilled CNC partner, we're ready to support your projects with precision and dedication.
+      
+        </p>
+    </div>
+    
+      <!-- <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#machines'"
+      /> -->
+      
+  </section>
+</section>
+
+<section id="machines">
+    <p class="section__text__p1">Explore our Machines</p>
+    <h1 class="title">Machines</h1>
+   
+    <div class="about-containers">
+      <div class="ref-wrapper1">
+        <div class="machine-table1">
+          <h2>VCE 750</h2>
+          <table>
+            <tr><th colspan="2">Spindle</th></tr>
+            <tr><td>Maximum spindle speeds</td><td>10 000 rpm</td></tr>
+            <tr><td>Vertical spindle</td><td>ISO 40</td></tr>
+        
+            <tr><th colspan="2">Travel</th></tr>
+            <tr><td>X axis</td><td>750 mm</td></tr>
+            <tr><td>Y axis</td><td>410 mm</td></tr>
+            <tr><td>Z axis</td><td>500 mm</td></tr>
+        
+            <tr><th colspan="2">Table</th></tr>
+            <tr><td>Table size</td><td>900 x 350 mm</td></tr>
+        
+            <tr><th colspan="2">Tool system</th></tr>
+            <tr><td>Tool magazine</td><td>20 pieces</td></tr>
+            <tr><td>Slide structure</td><td>Linear slide</td></tr>
+        
+            <tr><th colspan="2">Weight</th></tr>
+            <tr><td>Machine weight</td><td>4200 Kg</td></tr>
+          </table>
+          <img class="project-pic-machines1" src="assets/vce750.png" alt="Description of the image">
+        </div>
+        
+         
+          
+      </div>
+
+      <div class="ref-wrapper2">
+        <div class="machine-table2">
+          <h2>VCE 1000</h2>
+          <table>
+            <tr><th colspan="2">Spindle</th></tr>
+            <tr><td>Maximum spindle speeds</td><td>16 000 rpm</td></tr>
+            <tr><td>Vertical spindle</td><td>HSK-A63</td></tr>
+        
+            <tr><th colspan="2">Travel</th></tr>
+            <tr><td>X axis</td><td>1020 mm</td></tr>
+            <tr><td>Y axis</td><td>560 mm</td></tr>
+            <tr><td>Z axis</td><td>600 mm</td></tr>
+        
+            <tr><th colspan="2">Table</th></tr>
+            <tr><td>Table size</td><td>1000 × 560 mm</td></tr>
+        
+            <tr><th colspan="2">Tool system</th></tr>
+            <tr><td>Tool magazine</td><td>40 pieces</td></tr>
+            <tr><td>Slide structure</td><td>Linear slide</td></tr>
+        
+            <tr><th colspan="2">Weight</th></tr>
+            <tr><td>Machine weight</td><td>6500 Kg</td></tr>
+          </table>
+          <img class="project-pic-machines2" src="assets/vce1000.png" alt="Description of the image">
+        </div>
+        
+          
+         
+      </div>
+
+        
+
+    </div>
+        <!-- <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='#references'"
+        /> -->
+    
+  </section>
+  <section id="references">
+     
+      <p class="section__text__p1">Explore our</p>
+      <h1 class="title">References</h1>
+      
+        <div class="about-containers">
+          
+
+           <!-- References -->
+         
+            <img class="project-pic-ref" src="assets/ref1.png" alt="Description of the image">
+          
+           
+            <img class="project-pic-ref" src="assets/ref2.png" alt="Description of the image">
+          
+          
+            <img class="project-pic-ref" src="assets/ref3.png" alt="Description of the image">
+          
+          
+            <img class="project-pic-ref" src="assets/ref4.png" alt="Description of the image">
+          
+         
+            <img class="project-pic-ref" src="assets/ref5.png" alt="Description of the image">
+         
+          
+            <img class="project-pic-ref" src="assets/ref6.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref7.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref8.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref9.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref10.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref11.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref12.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref13.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref14.png" alt="Description of the image">
+         
+            <img class="project-pic-ref" src="assets/ref15.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref16.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref17.png" alt="Description of the image">
+          
+            <img class="project-pic-ref" src="assets/ref18.png" alt="Description of the image">
+          
+          
+       
+        </div>
+        <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      /> -->
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Us</h1>
+      <div class="contact-info-upper-container">
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p><a>+40755...</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">gergelycsaba37@yahoo.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gergely-csaba-810106177/">LinkedIn</a></p>
+        </div>
+
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
