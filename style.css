@@ -129,10 +129,13 @@ a:hover{
     display: block;       /* szükséges a margin auto-hoz */
     
   }
-  .ref-wrapper1, .ref-wrapper2 {
+  /* .ref-wrapper1, .ref-wrapper2 {
      padding: 50px;
 
-  }
+  } */
+  .ref-wrapper1, .ref-wrapper2 {
+    padding: 0 50px; /* fent-lent 0, bal-jobb 50px */
+}
  
   
   .machine-table1,  .machine-table2  {
